@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="sidebars.css" />
+    <script>
+        (() => {
+        'use strict'
+        const tooltipTriggerList = Array.from(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        tooltipTriggerList.forEach(tooltipTriggerEl => {
+          new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+      })()
+      </script>
+  </head>
+
+  <body>
+    <div class="header">
+      <div class="inner-header">
+        <div class="logo">
+          <img src="Logo_Final.png" width="70px" height="70px" alt="logo">
+        </div>
+
+        <div class="nav">
+          <ul>
+            <li><a id="home" href="#">Home Page<br></a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Tiffin Service</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><img id="im" src="Photo 1.png" alt="log"></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sidebar -->
+<section class="sidebar">
+    <div class="b-example-divider b-example-vr"></div>
+
+    <div class="flex-shrink-0 p-3 bg-dark" style="width: 280px;">
+      <a href="/" class="d-flex align-items-center pb-3 mb-3 link-dark text-decoration-none border-bottom">
+        <svg class="bi pe-none me-2" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
+        <span class="fs-5 fw-semibold filter-title">Filters</span>
+      </a>
+      <ul class="list-unstyled ps-0">
+        <li class="mb-1">
+          <!-- <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="true">
+            Pure Veg
+          </button> -->
+          <div class="collapse show" id="home-collapse">
+            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+              <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded ">Pure Veg</a></li>
+              <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Non-Veg</a></li>
+              <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Jain</a></li>
+            </ul>
+          </div>
+        </li>
+        <br><br>
+  
+        <a href="/" class="d-flex align-items-center pb-3 mb-3 link-dark text-decoration-none border-bottom">
+          <svg class="bi pe-none me-2" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
+          <span class="fs-5 fw-semibold filter-title">Sort</span>
+        </a>
+        <li class="mb-1">
+          <!-- <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="true">
+            Pure Veg
+          </button> -->
+          <div class="collapse show" id="home-collapse">
+            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+              <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Price: Low to High</a></li>
+              <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Price: High to Low</a></li>
+              <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Rating: High to Low</a></li>
+            </ul>
+          </div>
+        </li>
+</section>
+
+
+  </body>
+</html>

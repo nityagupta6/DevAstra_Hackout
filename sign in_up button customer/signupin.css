@@ -1,0 +1,283 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+  }
+
+  #doodle {
+    height: 30vh;
+    width: 100%;
+    background-position: center;
+  background-size: cover;
+  text-align: center;
+  justify-content: center;
+
+}
+  
+  html {
+    overflow-y: scroll;
+  }
+  
+  body {
+    background:#292929;
+    font-family: 'Titillium Web', sans-serif;
+  }
+
+  #logo {
+    text-align: center;
+    /* margin: 50px 50px 20px ; */
+    padding: 10px;
+    max-width: 400px;
+    margin-left: 36%;
+    /* margin: 40px auto; */
+    border-radius: 4px;
+    
+  }
+  
+  a {
+    text-decoration: none;
+    color: #292929;
+    transition: .5s ease;
+  }
+  a:hover {
+    color: #179b77;
+  }
+  
+  .form {
+    background: rgba(19, 35, 47, 0.9);
+    padding: 40px;
+    max-width: 600px;
+    margin: 40px auto;
+    border-radius: 4px;
+    box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
+    border-style: dashed;
+    border-color: whitesmoke;
+  }
+  
+  .tab-group {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 40px 0;
+  }
+  .tab-group:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .tab-group li a {
+    display: block;
+    text-decoration: none;
+    padding: 15px;
+    background: rgba(160, 179, 176, 0.25);
+    color: #a0b3b0;
+    font-size: 20px;
+    float: left;
+    width: 50%;
+    text-align: center;
+    cursor: pointer;
+    transition: .5s ease;
+  }
+  .tab-group li a:hover {
+    background: #179b77;
+    color: #292929;
+  }
+  .tab-group .active a {
+    background: #FDFDFD;
+    color: #292929;
+  }
+  
+  .tab-content > div:last-child {
+    display: none;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #292929;
+    font-weight: 300;
+    margin: 0 0 40px;
+  }
+  
+  label {
+    position: absolute;
+    transform: translateY(6px);
+    left: 13px;
+    color: rgba(255, 255, 255, 0.5);
+    transition: all 0.25s ease;
+    -webkit-backface-visibility: hidden;
+    pointer-events: none;
+    font-size: 22px;
+  }
+  label .req {
+    margin: 2px;
+    color: #1ab188;
+  }
+  
+  label.active {
+    transform: translateY(50px);
+    left: 2px;
+    font-size: 14px;
+  }
+  label.active .req {
+    opacity: 0;
+  }
+  
+  label.highlight {
+    color: #292929;
+  }
+  
+  input, textarea {
+    font-size: 22px;
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 5px 10px;
+    background: none;
+    background-image: none;
+    border: 1px solid #a0b3b0;
+    color: #292929;
+    border-radius: 0;
+    transition: border-color .25s ease, box-shadow .25s ease;
+  }
+  input:focus, textarea:focus {
+    outline: 0;
+    border-color: #1ab188;
+  }
+  
+  textarea {
+    border: 2px solid #a0b3b0;
+    resize: vertical;
+  }
+  
+  .field-wrap {
+    position: relative;
+    margin-bottom: 40px;
+  }
+  
+  .top-row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .top-row > div {
+    float: left;
+    width: 48%;
+    margin-right: 4%;
+  }
+  .top-row > div:last-child {
+    margin: 0;
+  }
+  
+  .button {
+    border: 0;
+    outline: none;
+    border-radius: 0;
+    padding: 15px 0;
+    font-size: 2rem;
+    font-weight: 600;
+     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    background: #FDFDFD;
+    color: #292929;
+    transition: all 0.5s ease;
+    -webkit-appearance: none;
+  }
+  .button:hover, .button:focus {
+    background: #179b77;
+  }
+  
+  .button-block {
+    display: block;
+    width: 100%;
+  }
+  
+  .forgot {
+    margin-top: -20px;
+    text-align: right;
+  }
+  
+
+/********* Styles needed for scrol button*/
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 10vh;
+}
+
+.chevron {
+  position: absolute;
+  width: 2.1rem;
+  height: 0.48rem;
+  opacity: 0;
+  transform: scale(0.3);
+  -webkit-animation: move-chevron 3s ease-out infinite;
+          animation: move-chevron 3s ease-out infinite;
+}
+
+.chevron:first-child {
+  -webkit-animation: move-chevron 3s ease-out 1s infinite;
+          animation: move-chevron 3s ease-out 1s infinite;
+}
+
+.chevron:nth-child(2) {
+  -webkit-animation: move-chevron 3s ease-out 2s infinite;
+          animation: move-chevron 3s ease-out 2s infinite;
+}
+
+.chevron:before,
+.chevron:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 50%;
+  background: #2c3e50;
+}
+
+.chevron:before {
+  left: 0;
+  transform: skewY(30deg);
+}
+
+.chevron:after {
+  right: 0;
+  width: 50%;
+  transform: skewY(-30deg);
+}
+
+@-webkit-keyframes move-chevron {
+  25% {
+    opacity: 1;
+  }
+  33.3% {
+    opacity: 1;
+    transform: translateY(2.28rem);
+  }
+  66.6% {
+    opacity: 1;
+    transform: translateY(3.12rem);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(4.8rem) scale(0.5);
+  }
+}
+
+@keyframes move-chevron {
+  25% {
+    opacity: 1;
+  }
+  33.3% {
+    opacity: 1;
+    transform: translateY(2.28rem);
+  }
+  66.6% {
+    opacity: 1;
+    transform: translateY(3.12rem);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(4.8rem) scale(0.5);
+  }
+}
+/* l here */

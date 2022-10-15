@@ -1,0 +1,113 @@
+body{
+    margin: 0;
+    background-color: #303030;
+    font-family: 'Scada', 'Sans-serif';
+    font-weight: 400;
+  }
+  .header{
+    border: 1px solid black;
+    background-color: #292929;
+    margin: 0;
+  }
+    
+  .inner-header{
+    width: 85%;
+    margin: 0 auto;
+  }
+  .header::after{
+    clear: both;
+    display: table;
+    content: '';
+  }
+  
+  
+  
+  /* Logo */
+  .logo{
+    float: left;
+    padding: 5px 0;
+  }
+  .logo img{
+    float: left;
+  }
+  
+  
+  
+  
+  
+  /* Nav*/
+#im{
+    width: 50%;
+    /* float: right; */
+}
+
+  .nav{
+    float: right;
+  }
+  
+  .nav ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+  
+  .nav li{
+    position: relative;
+    display: inline-block;
+    margin-left: 60px;
+    padding: 10px 0px 20px 5px;
+    width: 90px;
+    text-align: center;
+  }
+  
+  .nav li a {
+    text-decoration: none;
+    color: whitesmoke; 
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+  }
+  
+  .nav li a:hover{
+    color: whitesmoke;
+  }
+  
+  .nav li a:before{
+    content: '';
+    display: block;
+    width: 0%;
+    height: 5px;
+    background-color: whitesmoke;
+    position: absolute;
+    top: 0;
+    transition: .3s;
+  }
+  
+  .nav li a:hover::before{
+    width: 100%;
+  }
+  
+  .nav li a:after{
+    content: '';
+    display: block;
+    width: 0%;
+    height: 2px;
+    background-color: whitesmoke;
+    position: absolute;
+    bottom: 0;
+    transition: .3s;
+    right: 0;
+  }
+  .nav li a:hover::after{
+    width: 100%; 
+  }
+
+  .sidebar{
+    left: 0%;
+    height: 100%;
+  }
+  
+  
+  
+   
