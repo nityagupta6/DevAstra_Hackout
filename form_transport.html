@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="get_hired.css">
+</head>
+<body>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<nav id="navbar" class="">
+  <div class="nav-wrapper">
+    <!-- Navbar Logo -->
+    <div class="logo">
+        <img src="Logo_final.png" width="64px" height="64px">
+      <!-- Logo Placeholder for Inlustration -->
+      <!-- <a href="#home"><i class="fa fa-angellist"></i> Logo</a> -->
+    </div>
+
+    <!-- Navbar Links -->
+    <ul id="menu">
+      <li><a href="#home">Home</a></li><!--
+   --><li><a href="#services">About Us</a></li><!--
+   --><li><a href="#about">Tiffin Services</a></li><!--
+   --><li><a href="#contact">Contact Us</a></li>
+    </ul>
+
+    <div class="profileimg">
+        <img src="photo.png" width="50px" height="50px">
+      <!-- Logo Placeholder for Inlustration -->
+      <!-- <a href="#home"><i class="fa fa-angellist"></i> Logo</a> -->
+    </div>
+  </div>
+</nav>
+
+
+<!-- Menu Icon -->
+<div class="menuIcon">
+  <span class="icon icon-bars"></span>
+  <span class="icon icon-bars overlay"></span>
+</div>
+
+
+<div class="overlay-menu">
+  <ul id="menu">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+</div>
+
+<!-- form -->
+<div class="row">
+    <div class="col-md-12">
+      <form action="index.html" method="post">
+        <h1> Sign Up </h1>
+        
+        <fieldset>
+          
+          <legend><span class="number">1</span> Your Basic Info</legend>
+        
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="user_name">
+
+          <label for="Phone">Phone Number:</label>
+          <input type="phone" id="phone" name="user_phone">
+        
+          <label for="email">Email:</label>
+          <input type="email" id="mail" name="user_email">
+
+          <label for="add">Address:</label>
+          <textarea id="add" name="user_add"></textarea>
+
+          <label for="vehicle">Vehicle:</label>
+          <select id="vehicle" name="user_vehicle">
+            <!-- <optgroup label="Web">
+              <option value="frontend_developer">Front-End Developer</option>
+              <option value="php_developer">PHP Developer</option>
+              <option value="python_developer">Python Developer</option>
+              <option value="rails_developer">Rails Developer</option>
+              <option value="web_designer">Web Designer</option>
+              <option value="wordpress_developer">Wordpress Developer</option>
+            </optgroup> -->
+            <!-- <optgroup label="Mobile"> -->
+              <option value="choose Vehicle">Choose Vehicle</option>
+              <option value="Cycle">Cycle</option>
+              <option value="Bike">Bike</option>
+              <option value="Van">Van</option>
+              <option value="Mini Truck">Mini Truck</option>
+            <!-- </optgroup> -->
+            <!-- <optgroup label="Business">
+              <option value="business_owner">Business Owner</option>
+              <option value="freelancer">Freelancer</option>
+            </optgroup> -->
+          </select>
+       
+          <label>Gender:</label>
+          <input type="radio" id="under_13" value="under_13" name="user_age"><label for="under_13" class="light">Male</label><br>
+          <input type="radio" id="over_13" value="over_13" name="user_age"><label for="over_13" class="light">Female</label>
+          
+        </fieldset>
+        <fieldset>  
+        
+          <legend><span class="number">2</span> Your Preferences</legend>
+          
+         <label for="write_to_us">Write to us:</label>
+          <textarea id="write_to_us" name="user_write_to_us"></textarea>
+        
+          <label for="area">Area:</label>
+          <input type="area" id="area" name="user_area">
+        
+         <label for="job-time">Job Timings:</label>
+          <select id="job-time" name="user_job-time">
+            <!-- <optgroup label="Web">
+              <option value="frontend_developer">Front-End Developer</option>
+              <option value="php_developer">PHP Developer</option>
+              <option value="python_developer">Python Developer</option>
+              <option value="rails_developer">Rails Developer</option>
+              <option value="web_designer">Web Designer</option>
+              <option value="wordpress_developer">Wordpress Developer</option>
+            </optgroup> -->
+            <!-- <optgroup label="Mobile"> -->
+              <option value="choose Time">Choose Time</option>
+              <option value="7-9 A.M">7-9 A.M</option>
+              <option value="11-1 P.M">11-1 P.M</option>
+              <option value="6-8 P.M">6-8 P.M</option>
+              <option value="Any">Any</option>
+            <!-- </optgroup> -->
+            <!-- <optgroup label="Business">
+              <option value="business_owner">Business Owner</option>
+              <option value="freelancer">Freelancer</option>
+            </optgroup> -->
+          </select>
+          
+          <label>Expected Salary:</label>
+          <input type="checkbox" id="development" value="interest_development" name="user_interest"><label class="light" for="development">Rs. 1500-2000</label><br>
+          <input type="checkbox" id="design" value="interest_design" name="user_interest"><label class="light" for="design">Rs. 2000-5000</label><br>
+          <input type="checkbox" id="business" value="interest_business" name="user_interest"><label class="light" for="business">Rs. 5000-10000</label>
+          
+         </fieldset>
+       
+        <button type="submit">Submit</button>
+        
+       </form>
+        </div>
+      </div>
+<script src="get_hired.js"></script>
+</body>
+</html>
