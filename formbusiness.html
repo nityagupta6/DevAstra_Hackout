@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="get_hired.css">
+</head>
+<body>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<nav id="navbar" class="">
+  <div class="nav-wrapper">
+    <!-- Navbar Logo -->
+    <div class="logo">
+        <img src="images/Logo_Final.png" width="64px" height="64px">
+      <!-- Logo Placeholder for Inlustration -->
+      <!-- <a href="#home"><i class="fa fa-angellist"></i> Logo</a> -->
+    </div>
+
+    <!-- Navbar Links -->
+    <ul id="menu">
+      <li><a href="#home">Home</a></li><!--
+   --><li><a href="#services">About Us</a></li><!--
+   --><li><a href="#about">Tiffin Services</a></li><!--
+   --><li><a href="#contact">Contact Us</a></li>
+    </ul>
+
+    <div class="profileimg">
+        <img src="images/Photo 1.png" width="50px" height="50px">
+      <!-- Logo Placeholder for Inlustration -->
+      <!-- <a href="#home"><i class="fa fa-angellist"></i> Logo</a> -->
+    </div>
+  </div>
+</nav>
+
+
+<!-- Menu Icon -->
+<div class="menuIcon">
+  <span class="icon icon-bars"></span>
+  <span class="icon icon-bars overlay"></span>
+</div>
+
+
+<div class="overlay-menu">
+  <ul id="menu">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+</div>
+
+<!-- form -->
+<!-- profile img -->
+
+  <div class="file-upload">
+    <button class="file-upload-btn" type="button" onclick="$('.file-upload-input').trigger( 'click' )">Add Image</button>
+  
+    <div class="image-upload-wrap">
+      <input class="file-upload-input" type='file' onchange="readURL(this);" accept="image/*" />
+      <div class="drag-text">
+        <h3 class="drag-drop">Drag and drop a file or select add Image</h3>
+      </div>
+    </div>
+    <div class="file-upload-content">
+      <img class="file-upload-image" src="#" alt="your image" />
+      <div class="image-title-wrap">
+        <button type="button" onclick="removeUpload()" class="remove-image">Remove <span class="image-title">Uploaded Image</span></button>
+      </div>
+    </div>
+  </div>
+<!-- details -->
+<div class="row">
+    <div class="col-md-12">
+      <form action="index.html" method="post">
+        <h1>Fill in Details</h1>
+        
+        <fieldset>
+          
+          <legend><span class="number">1</span>Basic Info</legend>
+        
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="user_name">
+
+          <label for="Phone">Phone Number:</label>
+          <input type="phone" id="phone" name="user_phone">
+        
+          <label for="email">Email:</label>
+          <input type="email" id="mail" name="user_email">
+
+          <label for="add">Address:</label>
+          <textarea id="add" name="user_add"></textarea>
+
+          <label for="bio">Bio:</label>
+          <textarea id="bio" name="bio"></textarea>
+       
+          <label for="gender">Gender:</label>
+          <select id="gender" name="gender">
+            <option value="choose option">Choose an Option</option>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+              <option value="Prefer not to say">Prefer not to say</option>
+              <!-- <option value="Any">Any</option> -->
+
+            </select>
+          
+        </fieldset>
+        <feildset>
+            <legend><span class="number">2</span>Menu</legend>
+            
+            <div class="file-upload">
+                <button class="file-upload-btn" type="button" onclick="$('.file-upload-input').trigger( 'click' )">Add Weekly Menu</button>
+              
+                <div class="image-upload-wrap">
+                  <input class="file-upload-input" type='file' onchange="readURL(this);" accept="image/*" />
+                  <div class="drag-text">
+                    <h3 class="drag-drop">Drag or Click to add images</h3>
+                  </div>
+                </div>
+                <div class="file-upload-content">
+                  <img class="file-upload-image" src="#" alt="your image" />
+                  <div class="image-title-wrap">
+                    <button type="button" onclick="removeUpload()" class="remove-image">Remove <span class="image-title">Uploaded Image</span></button>
+                  </div>
+                </div>
+            </div>
+        
+        </feildset>
+        <fieldset>  
+        
+          <legend><span class="number">3</span> Your Subscription Plans</legend>
+          
+         
+        
+          <label for="lunch_month" class="menucon">Breakfast/Month:</label>
+          <!-- <label for="gender">Gender:</label> -->
+          <select id="selectsub" name="selectsub">
+            <option value="choose option">Choose an Option</option>
+              <option value="Yes">Yes</option>
+              <option value="No">No</option>
+              <!-- <option value="Any">Any</option> -->
+
+            </select>
+          <label for="lunch_month">Price:</label>
+          <input type="Price" id="area" name="user_lunch_month">
+
+          <label for="lunch_month" class="menucon">Lunch/Month:</label>
+          <!-- <label for="gender">Gender:</label> -->
+          <select id="selectsub" name="selectsub">
+            <option value="choose option">Choose an Option</option>
+              <option value="Yes">Yes</option>
+              <option value="No">No</option>
+              <!-- <option value="Any">Any</option> -->
+
+            </select>
+          <label for="lunch_month">Price:</label>
+          <input type="Price" id="area" name="user_lunch_month">
+
+          <label for="lunch_month" class="menucon">Dinner/Month:</label>
+          <!-- <label for="gender">Gender:</label> -->
+          <select id="selectsub" name="selectsub">
+            <option value="choose option">Choose an Option</option>
+              <option value="Yes">Yes</option>
+              <option value="No">No</option>
+              <!-- <option value="Any">Any</option> -->
+
+            </select>
+          <label for="lunch_month">Price:</label>
+          <input type="Price" id="area" name="user_lunch_month">
+
+          <label for="lunch_month" class="menucon">All/Month:</label>
+          <!-- <label for="gender">Gender:</label> -->
+          <select id="selectsub" name="selectsub">
+            <option value="choose option">Choose an Option</option>
+              <option value="Yes">Yes</option>
+              <option value="No">No</option>
+              <!-- <option value="Any">Any</option> -->
+
+            </select>
+          <label for="lunch_month">Price:</label>
+          <input type="Price" id="area" name="user_lunch_month">
+
+          <label for="lunch_month" class="menucon">Lunch & Dinner/Month:</label>
+          <!-- <label for="gender">Gender:</label> -->
+          <select id="selectsub" name="selectsub">
+            <option value="choose option">Choose an Option</option>
+              <option value="Yes">Yes</option>
+              <option value="No">No</option>
+              <!-- <option value="Any">Any</option> -->
+
+            </select>
+          <label for="lunch_month">Price:</label>
+          <input type="Price" id="area" name="user_lunch_month">
+
+          <label for="lunch_month" class="menucon">Lunch/3 Months:</label>
+          <!-- <label for="gender">Gender:</label> -->
+          <select id="selectsub" name="selectsub">
+            <option value="choose option">Choose an Option</option>
+              <option value="Yes">Yes</option>
+              <option value="No">No</option>
+              <!-- <option value="Any">Any</option> -->
+
+            </select>
+          <label for="lunch_month">Price:</label>
+          <input type="Price" id="area" name="user_lunch_month">
+
+          <label for="lunch_month" class="menucon">Dinner/3 Months:</label>
+          <!-- <label for="gender">Gender:</label> -->
+          <select id="selectsub" name="selectsub">
+            <option value="choose option">Choose an Option</option>
+              <option value="Yes">Yes</option>
+              <option value="No">No</option>
+              <!-- <option value="Any">Any</option> -->
+
+            </select>
+          <label for="lunch_month">Price:</label>
+          <input type="Price" id="area" name="user_lunch_month">
+
+          <label for="lunch_month" class="menucon">Lunch & Dinner/3 Months:</label>
+          <!-- <label for="gender">Gender:</label> -->
+          <select id="selectsub" name="selectsub">
+            <option value="choose option">Choose an Option</option>
+              <option value="Yes">Yes</option>
+              <option value="No">No</option>
+              <!-- <option value="Any">Any</option> -->
+
+            </select>
+          <label for="lunch_month">Price:</label>
+          <input type="Price" id="area" name="user_lunch_month">
+    
+        
+         </fieldset>
+       
+        <a href="./helping hand profiles/final_index.html"><button id="submitbutton" type="submit">Submit</button>
+        
+       </form>
+        </div>
+      </div>
+<script src="./gethiredbusiness.js"></script>
+</body>
+</html>

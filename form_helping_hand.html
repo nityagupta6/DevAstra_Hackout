@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="get_hired.css">
+</head>
+<body>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<nav id="navbar" class="">
+  <div class="nav-wrapper">
+    <!-- Navbar Logo -->
+    <div class="logo">
+        <img src="images/Logo_Final.png" width="64px" height="64px">
+      <!-- Logo Placeholder for Inlustration -->
+      <!-- <a href="#home"><i class="fa fa-angellist"></i> Logo</a> -->
+    </div>
+
+    <!-- Navbar Links -->
+    <ul id="menu">
+      <li><a href="./index.html">Home</a></li><!--
+   --><li><a href="#services">About Us</a></li><!--
+   --><li><a href="#about">Tiffin Services</a></li><!--
+   --><li><a href="#contact">Contact Us</a></li>
+    </ul>
+
+    <div class="profileimg">
+        <img src="images/Photo 1.png" width="50px" height="50px">
+      <!-- Logo Placeholder for Inlustration -->
+      <!-- <a href="#home"><i class="fa fa-angellist"></i> Logo</a> -->
+    </div>
+  </div>
+</nav>
+
+
+<!-- Menu Icon -->
+<div class="menuIcon">
+  <span class="icon icon-bars"></span>
+  <span class="icon icon-bars overlay"></span>
+</div>
+
+
+<div class="overlay-menu">
+  <ul id="menu">
+      <li><a href="./index.html">Home</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+</div>
+
+<!-- form -->
+<div class="row">
+    <div class="col-md-12">
+      <form id="signupform" action="index.html" method="post">
+        <h1> Sign Up </h1>
+        
+        <fieldset>
+          
+          <legend><span class="number">1</span> Your Basic Info</legend>
+        
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="user_name">
+
+          <label for="Phone">Phone Number:</label>
+          <input type="phone" id="phone" name="user_phone">
+        
+          <label for="email">Email:</label>
+          <input type="email" id="mail" name="user_email">
+
+          <label for="password">Password</label>
+          <input type="password" id="password" name="user_password">
+
+          <label for="add">Address:</label>
+          <textarea id="user_add" name="user_add"></textarea>
+
+          <label for="work As...">Work As...:</label>
+          <select id="workAs" name="user_work As...">
+            <!-- <optgroup label="Web">
+              <option value="frontend_developer">Front-End Developer</option>
+              <option value="php_developer">PHP Developer</option>
+              <option value="python_developer">Python Developer</option>
+              <option value="rails_developer">Rails Developer</option>
+              <option value="web_designer">Web Designer</option>
+              <option value="wordpress_developer">Wordpress Developer</option>
+            </optgroup> -->
+            <!-- <optgroup label="Mobile"> -->
+                <option value="choose role">Choose Role</option>
+              <option value="chef">Chef</option>
+              <option value="tiffin assembler">Tiffin Assembler</option>
+              <option value="tiffin packager">Tiffin Packager</option>
+              <option value="misc">Miscellaneous</option>
+            <!-- </optgroup> -->
+            <!-- <optgroup label="Business">
+              <option value="business_owner">Business Owner</option>
+              <option value="freelancer">Freelancer</option>
+            </optgroup> -->
+          </select>
+       
+          <label for="gender">Gender:</label>
+          <select id="gender" name="gender">
+            <option value="choose option">Choose an Option</option>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+              <option value="Prefer not to say">Prefer not to say</option>
+              <!-- <option value="Any">Any</option> -->
+
+            </select>
+          
+        </fieldset>
+        <fieldset>  
+        
+          <legend><span class="number">2</span> Your Preferences</legend>
+          
+         <label for="write_to_us">Write to us:</label>
+          <textarea id="write_to_us" name="user_write_to_us"></textarea>
+        
+          <label for="area">Area:</label>
+          <input type="area" id="area" name="user_area">
+        
+         <label for="job-time">Job Timings:</label>
+          <select id="job-time" name="user_job-time">
+            <!-- <optgroup label="Web">
+              <option value="frontend_developer">Front-End Developer</option>
+              <option value="php_developer">PHP Developer</option>
+              <option value="python_developer">Python Developer</option>
+              <option value="rails_developer">Rails Developer</option>
+              <option value="web_designer">Web Designer</option>
+              <option value="wordpress_developer">Wordpress Developer</option>
+            </optgroup> -->
+            <!-- <optgroup label="Mobile"> -->
+              <option value="choose Time">Choose Time</option>
+              <option value="full time">Full Time</option>
+              <option value="morning">Morning</option>
+              <option value="afternoon">Afternoon</option>
+              <option value="evening">Evening</option>
+              <option value="Any">Any</option>
+            <!-- </optgroup> -->
+            <!-- <optgroup label="Business">
+              <option value="business_owner">Business Owner</option>
+              <option value="freelancer">Freelancer</option>
+            </optgroup> -->
+          </select>
+          
+          <label for="ex-salary">Expected Salary:</label>
+          <select id="ex-salary" name="user-ex-sal">
+            <option value="choose option">Choose Range</option>
+              <option value="Rs. 1500-2000">Rs. 1500-2000</option>
+              <option value="Rs. 2000-2500">Rs. 2000-2500</option>
+              <option value="Rs. 5000-10000">Rs. 5000-10000</option>
+              <!-- <option value="Any">Any</option> -->
+
+            </select>
+          
+         </fieldset>
+       
+        <!-- <a href="index.html"><button id="submitbutton" type="submit">Submit</button></a> -->
+        <button id="submitbutton" type="submit">Submit</button>
+        
+       </form>
+        </div>
+      </div>
+
+      <!-- <footer>
+      <ol>
+        <li><img src="images/logo.png"></li>
+        <li><div>
+                <h4>DABBAWALA</h4>
+                <p>Catering All Tiffin Needs</p>
+            </div></li>
+        
+        <li><div class="elements">
+          <p>Follow us on</p>
+          <a href="https://www.youtube.com/watch?v=dGk85W0GfFU"><ion-icon name="logo-youtube" class="icon"></ion-icon></a> &nbsp; &nbsp; | &nbsp; &nbsp;
+          <a href="https://www.sarojinimarket.co.in/product-category/accessories/"><ion-icon name="globe-outline" class="icon"></ion-icon></a> &nbsp; &nbsp; | &nbsp; &nbsp;
+          <a href="https://www.instagram.com/accounts/login/?next=/sarojinimarketonline/"><ion-icon name="logo-instagram" class="icon"></ion-icon></a> &nbsp; &nbsp; &nbsp; &nbsp;
+      </div> </li>
+      </ol>
+
+      <a id="copy" href="#">&copy;Team DevAstra</a>
+    </footer> -->
+<script src="./build/gethiredhelper.bundle.js"></script>
+</body>
+</html>

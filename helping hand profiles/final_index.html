@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="sidebars.css" />
+    <script>
+        (() => {
+            "use strict";
+            const tooltipTriggerList = Array.from(
+                document.querySelectorAll('[data-bs-toggle="tooltip"]')
+            );
+            tooltipTriggerList.forEach((tooltipTriggerEl) => {
+                new bootstrap.Tooltip(tooltipTriggerEl);
+            });
+        })();
+    </script>
+</head>
+
+<body>
+    <!-- navbar -->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <nav id="navbar" class="">
+      <div class="nav-wrapper">
+        <!-- Navbar Logo -->
+        <div class="logo">
+            <img src="Logo_final.png" width="64px" height="64px" alt="final logo">
+          <!-- Logo Placeholder for Inlustration -->
+          <!-- <a href="#home"><i class="fa fa-angellist"></i> Logo</a> -->
+        </div>
+    
+        <!-- Navbar Links -->
+        <ul id="menu">
+          <li><a href="#home">Home</a></li><!--
+       --><li><a href="#services">About Us</a></li><!--
+       --><li><a href="#about">Tiffin Services</a></li><!--
+       --><li><a href="#contact">Contact Us</a></li>
+        </ul>
+    
+        <div class="profileimg">
+            <img src="img/Photo 1.png" width="50px" height="50px" alt="profile logo">
+          <!-- Logo Placeholder for Inlustration -->
+          <!-- <a href="#home"><i class="fa fa-angellist"></i> Logo</a> -->
+        </div>
+      </div>
+    </nav>
+    
+    
+    <!-- Menu Icon -->
+    <div class="menuIcon">
+      <span class="icon icon-bars"></span>
+      <span class="icon icon-bars overlay"></span>
+    </div>
+    
+    
+    <div class="overlay-menu">
+      <ul id="menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+    <script src="tiffinpg.js"></script>
+
+    <br><br>
+
+    <div id="content">
+        <!-- Sidebar -->
+        <div id="sidebar" class="sidebar-links" style="display: flex; align-items: center; flex-direction: column">
+            <div>
+                <h4>Get</h4>
+                <ul>
+                    <li><a href="#">Helper</a></li>
+                    <li><a href="#">Transporter</a></li>
+                </ul>
+            </div>
+            <br />
+            <div style="
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+          ">
+                <h4>Sort</h4>
+                <ul>
+                    <li>
+                        <a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Area</a>
+                    </li>
+                    <li>
+                        <a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Expected Salary</a>
+                    </li>
+                    <li>
+                        <a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Working Hours</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- yello box -->
+        <div id="stuff" style="">
+            <br>
+            <form>
+                <div class="pseudo-search">
+                    <input type="text" placeholder="Search..." autofocus required />
+
+                    <i class="fa fa-globe places"></i>
+                    <button class="fa fa-search" type="submit">.</button>
+                </div>
+            </form>
+            <br><br>
+            <!-- image of map -->
+            <img src="image 6.png" alt="map" style="margin-left: 3%">
+            <!-- table -->
+            <br><br>
+            <table>
+                <ol>
+                    <li>
+                        <div class="card" style="width: 18rem;">
+                            <div class="card-body">
+                              <h5 class="card-title">Raju</h5>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                              <li id="salary1" class="list-group-item">Salary : 2003 Rs</li>
+                              <li id="working1" class="list-group-item">Working Hours : 24/7</li>
+                              <li id="area1" class="list-group-item">Area : Pune</li>
+                            </ul>
+                            <div class="card-body">
+                              <a href="#" class="card-link">Details</a>
+                            </div>
+                          </div>
+                          
+                          </div>
+                    </li>
+                    <li>
+                        <div class="card" style="width: 18rem;">
+                            <div class="card-body">
+                              <h5 class="card-title">pratap</h5>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                              <li class="list-group-item">Salary : 500 Rs</li>
+                              <li class="list-group-item">Working Hours : 24/7</li>
+                              <li class="list-group-item">Area : Delhi</li>
+                            </ul>
+                            <div class="card-body">
+                              <a href="#" class="card-link">Details</a>
+                            </div>
+                    </li>
+                    <li>
+                        <div class="card" style="width: 18rem;">
+                            <div class="card-body">
+                              <h5 class="card-title">Lokesh</h5>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                              <li class="list-group-item">Salary : 4000 Rs</li>
+                              <li class="list-group-item">Working Hours : 24/7</li>
+                              <li class="list-group-item">Range : Mumbai</li>
+                            </ul>
+                            <div class="card-body">
+                              <a href="#" class="card-link">Details</a>
+                            </div>
+                    </li>
+                </ol>
+                <ol>
+                    <li>
+                        <div class="card" style="width: 18rem;">
+                            <div class="card-body">
+                              <h5 class="card-title">Jindal</h5>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                              <li class="list-group-item">Salary : 2000 Rs</li>
+                              <li class="list-group-item">Working Hours : 12/5</li>
+                              <li class="list-group-item">Range : Delhi</li>
+                            </ul>
+                            <div class="card-body">
+                              <a href="#" class="card-link">Details</a>
+                            </div>
+                          </div>
+                          
+                          </div>
+                    </li>
+                    <li>
+                        <div class="card" style="width: 18rem;">
+                            <div class="card-body">
+                              <h5 class="card-title">Rakesh</h5>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                              <li class="list-group-item">Salary : 3000 Rs</li>
+                              <li class="list-group-item">Working Hours : 12/7</li>
+                              <li class="list-group-item">Range : Pune</li>
+                            </ul>
+                            <div class="card-body">
+                              <a href="#" class="card-link">Details</a>
+                            </div>
+                    </li>
+                    <li>
+                        <div class="card" style="width: 18rem;">
+                            <div class="card-body">
+                              <h5 class="card-title">Banta</h5>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                              <li class="list-group-item">Salary : 2003 Rs</li>
+                              <li class="list-group-item">Working Hours : 24/7</li>
+                              <li class="list-group-item">Range : Pune</li>
+                            </ul>
+                            <div class="card-body">
+                              <a href="#" class="card-link">Details</a>
+                            </div>
+                    </li>
+                </ol>
+                <ol>
+                    <li>
+                        <div class="card" style="width: 18rem;">
+                            <div class="card-body">
+                              <h5 class="card-title">Rakesh</h5>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                              <li class="list-group-item">Salary : 2000 Rs</li>
+                              <li class="list-group-item">Working Hours : 24/7</li>
+                              <li class="list-group-item">Range : Pune</li>
+                            </ul>
+                            <div class="card-body">
+                              <a href="#" class="card-link">Details</a>
+                            </div>
+                          </div>
+                          
+                          </div>
+                    </li>
+                    <li>
+                        <div class="card" style="width: 18rem;">
+                            <div class="card-body">
+                              <h5 class="card-title">Mukesh</h5>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                              <li class="list-group-item">Salary : 4000 Rs</li>
+                              <li class="list-group-item">Working Hours : 20/7</li>
+                              <li class="list-group-item">Range : Ranchi</li>
+                            </ul>
+                            <div class="card-body">
+                              <a href="#" class="card-link">Details</a>
+                            </div>
+                    </li>
+                    <li>
+                        <div class="card" style="width: 18rem;">
+                            <div class="card-body">
+                              <h5 class="card-title">Santa</h5>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                              <li class="list-group-item">Salary : 4000 Rs</li>
+                              <li class="list-group-item">Working Hours : 24/7</li>
+                              <li class="list-group-item">Range : Jammu</li>
+                            </ul>
+                            <div class="card-body">
+                              <a href="#" class="card-link">Details</a>
+                            </div>
+                    </li>
+                </ol>
+            </table>
+              
+
+        </div>
+        
+    </div>
+    <footer class="footer-section">
+        <div class="container">
+            <div class="footer-cta pt-5 pb-5">
+                <div class="row">
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="cta-text">
+                                <h4>Find us</h4>
+                                <span>1010 Avenue, sw 54321, chandigarh</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="fas fa-phone"></i>
+                            <div class="cta-text">
+                                <h4>Call us</h4>
+                                <span>9876543210 0</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="far fa-envelope-open"></i>
+                            <div class="cta-text">
+                                <h4>Mail us</h4>
+                                <span>mail@info.com</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-content pt-5 pb-5">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4 mb-50">
+                        <div class="footer-widget">
+                            <div class="footer-logo">
+                                <a href="index.html"><img src="https://i.ibb.co/QDy827D/ak-logo.png" class="img-fluid" alt="logo"></a>
+                            </div>
+                            <div class="footer-text">
+                                <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor incididuntut consec tetur adipisicing
+                                elit,Lorem ipsum dolor sit amet.</p>
+                            </div>
+                            <div class="footer-social-icon">
+                                <span>Follow us</span>
+                                <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
+                                <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
+                                <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                        <div class="footer-widget">
+                            <div class="footer-widget-heading">
+                                <h3>Useful Links</h3>
+                            </div>
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">about</a></li>
+                                <li><a href="#">services</a></li>
+                                <li><a href="#">portfolio</a></li>
+                                <li><a href="#">Contact</a></li>
+                                <li><a href="#">About us</a></li>
+                                <li><a href="#">Our Services</a></li>
+                                <li><a href="#">Expert Team</a></li>
+                                <li><a href="#">Contact us</a></li>
+                                <li><a href="#">Latest News</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                        <div class="footer-widget">
+                            <div class="footer-widget-heading">
+                                <h3>Subscribe</h3>
+                            </div>
+                            <div class="footer-text mb-25">
+                                <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
+                            </div>
+                            <div class="subscribe-form">
+                                <form action="#">
+                                    <input type="text" placeholder="Email Address">
+                                    <button><i class="fab fa-telegram-plane">.</i></button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                        <div class="copyright-text">
+                            <p>Copyright &copy; 2018, All Right Reserved <a href="https://codepen.io/anupkumar92/">Dabba Wala</a></p>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+                        <div class="footer-menu">
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Terms</a></li>
+                                <li><a href="#">Privacy</a></li>
+                                <li><a href="#">Policy</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../build/fire.bundle.js"></script>
+</body>
+
+</html>

@@ -4,95 +4,299 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title></title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="" />
-    
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="sidebars.css" />
     <script>
         (() => {
-        'use strict'
-        const tooltipTriggerList = Array.from(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-        tooltipTriggerList.forEach(tooltipTriggerEl => {
-          new bootstrap.Tooltip(tooltipTriggerEl)
-        })
-      })()
-      </script>
-  </head>
+            "use strict";
+            const tooltipTriggerList = Array.from(
+                document.querySelectorAll('[data-bs-toggle="tooltip"]')
+            );
+            tooltipTriggerList.forEach((tooltipTriggerEl) => {
+                new bootstrap.Tooltip(tooltipTriggerEl);
+            });
+        })();
+    </script>
+</head>
 
-  <body>
-    <div class="header">
-      <div class="inner-header">
+<body>
+    <!-- navbar -->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <nav id="navbar" class="">
+      <div class="nav-wrapper">
+        <!-- Navbar Logo -->
         <div class="logo">
-          <img src="Logo_Final.png" width="70px" height="70px" alt="logo">
+            <img src="Logo_final.png" width="64px" height="64px" alt="final logo">
+          <!-- Logo Placeholder for Inlustration -->
+          <!-- <a href="#home"><i class="fa fa-angellist"></i> Logo</a> -->
         </div>
-
-        <div class="nav">
-          <ul>
-            <li><a id="home" href="#">Home Page<br></a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Tiffin Service</a></li>
-            <li><a href="#">Contact Us</a></li>
-            <li><img id="im" src="Photo 1.png" alt="log"></li>
-          </ul>
+    
+        <!-- Navbar Links -->
+        <ul id="menu">
+          <li><a href="../index.html">Home</a></li><!--
+       --><li><a href="#services">About Us</a></li><!--
+       --><li><a href="#about">Tiffin Services</a></li><!--
+       --><li><a href="#contact">Contact Us</a></li>
+        </ul>
+    
+        <div class="profileimg">
+            <img src="Photo 1.png" width="50px" height="50px" alt="profile logo">
+          <!-- Logo Placeholder for Inlustration -->
+          <!-- <a href="#home"><i class="fa fa-angellist"></i> Logo</a> -->
         </div>
       </div>
+    </nav>
+    
+    
+    <!-- Menu Icon -->
+    <div class="menuIcon">
+      <span class="icon icon-bars"></span>
+      <span class="icon icon-bars overlay"></span>
     </div>
+    
+    
+    <div class="overlay-menu">
+      <ul id="menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+    <script src="tiffinpg.js"></script>
 
-    <!-- Sidebar -->
-<section class="sidebar">
-    <div class="b-example-divider b-example-vr"></div>
+    <br><br>
 
-    <div class="flex-shrink-0 p-3 bg-dark" style="width: 280px;">
-      <a href="/" class="d-flex align-items-center pb-3 mb-3 link-dark text-decoration-none border-bottom">
-        <svg class="bi pe-none me-2" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
-        <span class="fs-5 fw-semibold filter-title">Filters</span>
-      </a>
-      <ul class="list-unstyled ps-0">
-        <li class="mb-1">
-          <!-- <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="true">
-            Pure Veg
-          </button> -->
-          <div class="collapse show" id="home-collapse">
-            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-              <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded ">Pure Veg</a></li>
-              <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Non-Veg</a></li>
-              <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Jain</a></li>
-            </ul>
-          </div>
-        </li>
-        <br><br>
-  
-        <a href="/" class="d-flex align-items-center pb-3 mb-3 link-dark text-decoration-none border-bottom">
-          <svg class="bi pe-none me-2" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
-          <span class="fs-5 fw-semibold filter-title">Sort</span>
-        </a>
-        <li class="mb-1">
-          <!-- <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="true">
-            Pure Veg
-          </button> -->
-          <div class="collapse show" id="home-collapse">
-            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-              <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Price: Low to High</a></li>
-              <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Price: High to Low</a></li>
-              <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Rating: High to Low</a></li>
-            </ul>
-          </div>
-        </li>
-</section>
+    <div id="content">
+        <!-- Sidebar -->
+        <div id="sidebar" class="sidebar-links" style="display: flex; align-items: center; flex-direction: column">
+            <div>
+                <h4>Filters</h4>
+                <ul>
+                    <li><a href="#">Pure Veg</a></li>
+                    <li><a href="#">Non-Veg</a></li>
+                    <li><a href="#">Jain</a></li>
+                </ul>
+            </div>
+            <br />
+            <div style="
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+          ">
+                <h4>Sort</h4>
+                <ul>
+                    <li>
+                        <a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Price: Low to High</a>
+                    </li>
+                    <li>
+                        <a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Price: High to Low</a>
+                    </li>
+                    <li>
+                        <a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Rating: High to Low</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
 
+        <!-- yello box -->
+        <div id="stuff" style="">
+            <br>
+            <form>
+                <div class="pseudo-search">
+                    <input type="text" placeholder="Search..." autofocus required />
 
-  </body>
+                    <i class="fa fa-globe places"></i>
+                    <button class="fa fa-search" type="submit">.</button>
+                </div>
+            </form>
+            <br><br>
+            <!-- image of map -->
+            <img src="image 6.png" alt="map" style="margin-left: 3%">
+            <!-- table -->
+            <br><br>
+            <table style="margin-left: 3%;  border-spacing: 1em 0;">
+                
+                <tbody>
+                  <tr>
+                    <td><img id="khana" src="khana.png" alt="food" height="80px" width="80px" ></td>
+                    <td>
+                        <b>Makhans</b>⭐⭐⭐⭐&star;
+                        <p>navi basti, pune.<br>
+                            <b>30+ customers</b>
+                        </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><img id="khana" src="img/khana2.png" alt="food" height="80px" width="80px"></td>
+                    <td>
+                        <b>Haldiram</b>⭐⭐⭐⭐ &star;
+                        <p>rajaganj, delhi.<br>
+                            <b>30+ customers</b>
+                        </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><img id="khana" src="img/khana3.jpg" alt="food" height="80px" width="80px"></td>
+                    <td>
+                        <b>raju dabbawala</b>⭐⭐⭐⭐ &star;
+                        <p>kali basti, mumbai.<br>
+                            <b>30+ customers</b>
+                        </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><img id="khana" src="img/khana4.jpg" alt="food" height="80px" width="80px"></td>
+                    <td>
+                        <b>Rajbhog</b>⭐⭐⭐⭐ <i class='fa fa-star-half-full' style='color: #f3da35'></i>
+                        <p>RV Lane, pune.<br>
+                            <b>275 customers</b>
+                        </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><img id="khana" src="img/khana5.jpg" alt="food" height="80px" width="80px"></td>
+                    <td>
+                        <b>savitri</b>⭐⭐⭐⭐ <i class='fa fa-star-half-full' style='color: #f3da35'></i>
+                        <p>Sanik Colony<br>
+                            <b>275 customers</b>
+                        </p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+
+        </div>
+        
+    </div>
+    <footer class="footer-section">
+        <div class="container">
+            <div class="footer-cta pt-5 pb-5">
+                <div class="row">
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="cta-text">
+                                <h4>Find us</h4>
+                                <span>1010 Avenue, sw 54321, chandigarh</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="fas fa-phone"></i>
+                            <div class="cta-text">
+                                <h4>Call us</h4>
+                                <span>9876543210 0</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="far fa-envelope-open"></i>
+                            <div class="cta-text">
+                                <h4>Mail us</h4>
+                                <span>mail@info.com</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-content pt-5 pb-5">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4 mb-50">
+                        <div class="footer-widget">
+                            <div class="footer-logo">
+                                <a href="index.html"><img src="https://i.ibb.co/QDy827D/ak-logo.png" class="img-fluid" alt="logo"></a>
+                            </div>
+                            <div class="footer-text">
+                                <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor incididuntut consec tetur adipisicing
+                                elit,Lorem ipsum dolor sit amet.</p>
+                            </div>
+                            <div class="footer-social-icon">
+                                <span>Follow us</span>
+                                <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
+                                <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
+                                <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                        <div class="footer-widget">
+                            <div class="footer-widget-heading">
+                                <h3>Useful Links</h3>
+                            </div>
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">about</a></li>
+                                <li><a href="#">services</a></li>
+                                <li><a href="#">portfolio</a></li>
+                                <li><a href="#">Contact</a></li>
+                                <li><a href="#">About us</a></li>
+                                <li><a href="#">Our Services</a></li>
+                                <li><a href="#">Expert Team</a></li>
+                                <li><a href="#">Contact us</a></li>
+                                <li><a href="#">Latest News</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                        <div class="footer-widget">
+                            <div class="footer-widget-heading">
+                                <h3>Subscribe</h3>
+                            </div>
+                            <div class="footer-text mb-25">
+                                <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
+                            </div>
+                            <div class="subscribe-form">
+                                <form action="#">
+                                    <input type="text" placeholder="Email Address">
+                                    <button><i class="fab fa-telegram-plane">.</i></button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                        <div class="copyright-text">
+                            <p>Copyright &copy; 2018, All Right Reserved <a href="https://codepen.io/anupkumar92/">Dabba Wala</a></p>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+                        <div class="footer-menu">
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Terms</a></li>
+                                <li><a href="#">Privacy</a></li>
+                                <li><a href="#">Policy</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
 </html>

@@ -6,6 +6,7 @@
   <title>Dabba Wale</title>
   <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/navbars/">
   <link href="../bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,25 +15,164 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Fuzzy+Bubbles&family=Ubuntu:wght@300&display=swap" rel="stylesheet"> 
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  
 </head>
 
 <body>
-    <div class="container">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <div class="header">
+      <div class="inner-header">
+        <div class="logo">
+          <img src="images/Logo_Final.png" width="70px" height="70px" alt="logo">
+        </div>
+
+        <div class="nav">
+          <ul>
+            <li><a id="home" href="#">Home Page<br></a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Tiffin Service</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><img id="im" src="Photo 1.png" alt="log"></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+    <div class="container" id="container">
         <header>
+            <!-- <img id="logo" src="images/logo.png"> -->
             <div class="banner backdrop">
                 <!-- <h1>Get home cooked food</h1>
                 <h2>right at your doorstep.</h2> -->
             <!-- <img id="logo" src="dabbawala.jpg">; -->
-            <h1>Ghar Ka Khana!</h1>
-            <h3 class="text1">Home cooked food delivered right at your doorstep!</h3>
+            <div id="animate" onmouseover="moveRight()">
+              <h1>Ghar Ka Khana!</h1>
+              <h3 class="text1">Home cooked food delivered right at your doorstep!</h3>
+              </div>
             <!-- <h3 class="text1">Dabba Wala guides you to the right tiffin services.</h3> -->
-            <br><br>
-            <button type="button" class="button btn btn-warning">Avail service</button>
-            <button type="button" class="button btn btn-dark">Get Hired</button>
+            <br><br><br>
+            <div  class="button-start" id="optionbutton">
+              <a href="./sign_in_up_button_customer/signupin.html"><button type="button" class="button btn btn-warning button1">Avail service</button></a>
+              <a href="./sign_in_up_button_supplier/collabhire.html"><button type="button" class="button btn btn-dark">Get Hired</button></a>
+              </div>
+            
             </div>
         </header>
     </div>
-        <div class="info row">
+        
+    <div class="rest">
+        <h1 class="title" id="whatwedo-title">What we do</h1>
+            <img class="vectors img2" src="images/vector.png">
+            <section class="whatwedo">
+                <div class="container overflow-hidden">
+                    <div class="row gx-5">
+                      <div class="col">
+                       <div class="p-3 border  box1 text">If you wish to help us out in our business. We deliver best restaurant/tiffin management software and mobile apps with enriched features, and we keep our systems up to date so our clients get the latest technology to use which helps them acheiving their target fast. Register with us.</div>
+                      </div>
+                      <div class="col">
+                        <div class="p-3 border  box2 text">Or if you're looking for a part-time delivery job. A customized app with rich features customer management, order and delivery management with tracking, trending reports, invoices, alerts, payment gateway with eWallet, netBanking, credit and debit cards, SMS alerts and much more. </div>
+                      </div>
+                    </div>
+                  </div>
+            </section>
+            
+            <img class="vectors img1" src="images/lady.jpg">
+            
+
+    
+
+    <!-- Testimonials -->
+    <h1 class="title">See who we helped</h1>
+    <section id="testimonials" class="text-center bg-peach text-white">
+        <div id="testimonials-carousel" class="carousel slide carousel-fade carousel-div container-fluid" data-interval="false">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <h2>DabbaWaala has made my life so much more easier by not making me worry about my meals of the day and providing me with healthy and delicious food</h2>
+                <img class="image-slides" src="images/man.jpg" alt="dog-profile">
+                <em>Pebbles, New York</em>     
+              </div>
+              <div class="carousel-item">
+                <h2>I never thought my passion for cooking could land me such a great business in tiffin service one day. All thanks to DabbaWala which made this possible</h2>
+                <img class="image-slides" src="images/woman.jpg" alt="lady-profile">
+                <em>Beverly, Illinois</em>  
+              </div>
+              <div class="carousel-item">
+                <h2>The delivery job in Dabba Wala has given me a new source of income and it's a work I enjoy</h2>
+                <img class="image-slides" src="images/mandeli.jpg" alt="lady-profile">
+                <em>Beverly, Illinois</em>  
+              </div>
+            </div>
+            
+            <a class="carousel-control-prev button-color" href="#testimonials-carousel" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon button-color" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#testimonials-carousel" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+            
+          </div>
+    </section>
+    <br><br><br>
+    <div class="bottom-banner">
+        <h1>Let's get started!</h1>
+        <br>
+        <a href="#container"><button type="button" class="button btn  button2">Click here</button></a>
+    </div>
+    <br>
+
+    <footer>
+      <ol>
+        <li><img src="images/logo.png"></li>
+        <li><div>
+                <h4>DABBAWALA</h4>
+                <p>Catering All Tiffin Needs</p>
+            </div></li>
+        
+        <li><div class="elements">
+          <p>Follow us on</p>
+          <a href="https://www.youtube.com/watch?v=dGk85W0GfFU"><ion-icon name="logo-youtube" class="icon"></ion-icon></a> &nbsp; &nbsp; | &nbsp; &nbsp;
+          <a href="https://www.sarojinimarket.co.in/product-category/accessories/"><ion-icon name="globe-outline" class="icon"></ion-icon></a> &nbsp; &nbsp; | &nbsp; &nbsp;
+          <a href="https://www.instagram.com/accounts/login/?next=/sarojinimarketonline/"><ion-icon name="logo-instagram" class="icon"></ion-icon></a> &nbsp; &nbsp; &nbsp; &nbsp;
+      </div> </li>
+      </ol>
+
+      <a id="copy" href="#">&copy;Team DevAstra</a>
+    </footer>
+    </div>
+
+
+
+    <!-- Sidebar -->
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="info row">
             <div class="col-lg-12 info1 row"> 
                 <img class="image col-lg-6 img-responsive" src="images/gethired1.webp">
                 <div class="col-lg-6 text">
@@ -48,8 +188,72 @@
                 </div>
                 <img class="image col-lg-6 img-responsive" src="images/bg3.jpg">
             </div>
-        </div>
-    
-    
-</body>
-</html>
+        </div> -->
+
+       
+        <!-- <section class="info">
+            <div class="row row-cols-1">
+                <div class="card whatwedo1 col-lg-6 col-md-12 ">
+                    <div class="card-body ">
+                      This is some text within a card body.
+                    </div>
+                  </div>
+                  <div class="card whatwedo2 col-lg-6 col-md-12">
+                    <div class="card-body ">
+                      This is some text within a card body.
+                    </div>
+                  </div>
+            </div>
+            
+        </section>  -->
+
+        <!-- <div class="container px-4">
+            <div class="row gx-5">
+              <div class="col box1">
+                <div class="p-3">1 of 2</div>
+              </div>
+              <br><br><br><br>
+              <div class="col box2">
+                <div class="p-3">2 of 2</div>
+              </div>
+              </div>
+            </div> -->
+
+
+  <!-- <script type="text/javascript">
+    var imgObj = null;
+    var imgObj2 = null
+           
+           function init() {
+              imgObj = document.getElementById('animate');
+              imgObj2 = document.getElementById('optionbutton')
+              imgObj.style.position= 'relative'; 
+              imgObj2.style.position= 'relative'; 
+              imgObj.style.left = '50px'; 
+              imgObj2.style.left = '50px'; 
+           }
+           let done=false
+           function goLeft(){
+             if(imgObj.style.left=='0px') return
+             imgObj.style.left = parseInt(imgObj.style.left) - 1 + 'px';
+             setTimeout(goLeft,2);
+           }
+
+           function goLeft2(){
+             if(imgObj2.style.left=='350px') return
+             imgObj2.style.left = parseInt(imgObj2.style.left) + 1 + 'px';
+             setTimeout(goLeft2,2);
+           }
+
+           function moveRight() {
+             console.log(10)
+             if(done) return
+             //  imgObj.style.left = parseInt(imgObj.style.left) - 10 + 'px';
+             goLeft()
+             goLeft2()
+              done=true
+           }
+
+           
+           window.onload = init;
+ </script> -->
