@@ -7,7 +7,8 @@ module.exports = {
     get_hired: path.resolve(__dirname,'./get_hired.js'),
     gethiredhelper: path.resolve(__dirname,'./gethiredhelper.js'),
     gethiredbusiness: path.resolve(__dirname,'./gethiredbusiness.js'),
-    fire: path.resolve(__dirname,'./helping hand profiles/fire.js')
+    fire: path.resolve(__dirname,'./helping hand profiles/fire.js'),
+    sidebars: path.resolve(__dirname,'./customer/sidebars.js')
   },
   output: {
     path: path.resolve(__dirname,'./build'),
